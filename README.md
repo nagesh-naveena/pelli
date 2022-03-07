@@ -1,0 +1,1 @@
+This is code for Statid marriage website. Simple web pages as initial setup.
