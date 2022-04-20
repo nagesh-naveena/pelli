@@ -1,0 +1,288 @@
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <title>Pelli Marriage Bureau</title>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./lightbox.css">
+<script>
+    function openModal(modelNo) {
+      document.getElementById("myModal"+modelNo).style.display = "block";
+    }
+
+    function closeModal(modelNo) {
+      document.getElementById("myModal"+modelNo).style.display = "none";
+    }
+
+    var slideIndex = 1;
+    showSlides(1, slideIndex);
+
+    function plusSlides(modelNo, n) {
+      showSlides(modelNo, slideIndex += n);
+    }
+
+    function currentSlide(modelNo, n) {
+      showSlides(modelNo, slideIndex = n);
+    }
+
+    function showSlides(modelNo, n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides"+modelNo);
+      var dots = document.getElementsByClassName("demo"+modelNo);
+      var captionText = document.getElementById("caption"+modelNo);
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+</script>
+    </head>
+    <body style="background-color:#009688;">
+        <div class="banner">
+            <div class="navbar">
+                <img name="Blank.jpg" class="logo"/>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./bride.html">Search Bride</a></li>
+                    <li><a href="./groom.html">Search Groom</a></li>
+                    <!-- li><a href="#">Success Stories</a></li -->
+                    <li><a href="./contactus.html">Contact Us</a></li>
+                    <li><a href="./aboutus.html">About Us</a></li>
+                </ul>
+            </div>
+            <div class="profiles">
+                <table border="0" class="contact">
+
+                    <tr>
+                        <td><img src="./images/groom/G1001.jpg" class="profiles hidden" onclick="openModal(1);currentSlide(1,1)" ></td>
+
+                        <div id="myModal1" class="modal">
+                          <span class="close cursor" onclick="closeModal(1)">&times;</span>
+                          <div class="modal-content">
+
+                                <div class="mySlides1">
+                                  <div class="numbertext">1 / 4</div>
+                                  <img src="./images/groom/G1001.jpg" style="width:100%">
+                                </div>
+
+                                <div class="mySlides1">
+                                  <div class="numbertext">2 / 4</div>
+                                  <img src="./images/groom/G1002.jpg" style="width:100%">
+                                </div>
+                              
+                                  <a class="prev" onclick="plusSlides(1,-1)">&#10094;</a>
+                                  <a class="next" onclick="plusSlides(1,1)">&#10095;</a>
+
+                                    <div class="caption-container">
+                                      <p id="caption1"></p>
+                                    </div>
+                              
+                                  <div class="column">
+                                  <img class="demo1 cursor" src="./images/groom/G1001.jpg" style="width:100%" onclick="currentSlide(1,1)" alt="">
+                                </div>
+                                <div class="column">
+                                  <img class="demo1 cursor" src="./images/groom/G1002.jpg" style="width:100%" onclick="currentSlide(1,2)" alt="">
+                                </div>
+                           </div>
+                        </div>
+                        <td>
+                            <table border="0" class="profile">
+                                <tr>
+                                    <td colspan="2">A Suresh***</td>
+                                </tr>
+                                <tr>
+                                    <td>32 Yrs, 5'8"</td>
+                                    <td>B. Tech/ MS (US)</td>
+                                </tr>
+                                <tr>
+                                    <td>USA</td>
+                                    <td>QA Engineer, AT&amp;T</td>
+                                </tr>
+                                <tr>
+                                    <td>Telugu, Mudiraj</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Never Married</td>
+                                    <td></td>
+                                </tr>                            
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/groom/G2001.jpg" class="profiles hidden" onclick="openModal(2);currentSlide(2,1)"></td>
+                        <div id="myModal2" class="modal">
+                          <span class="close cursor" onclick="closeModal(2)">&times;</span>
+                          <div class="modal-content">
+
+                                <div class="mySlides2">
+                                  <img src="./images/groom/G2001.jpg" style="width:100%">
+                                </div>
+
+                                <div class="mySlides2">
+                                  <img src="./images/groom/G2002.jpg" style="width:100%">
+                                </div>
+                              
+                                <div class="mySlides2">
+                                  <img src="./images/groom/G2003.jpg" style="width:100%">
+                                </div>
+                              
+                                <div class="mySlides2">
+                                  <img src="./images/groom/G2004.jpg" style="width:100%">
+                                </div>
+                              
+                                  <a class="prev" onclick="plusSlides(2,-1)">&#10094;</a>
+                                  <a class="next" onclick="plusSlides(2,1)">&#10095;</a>
+
+                                    <div class="caption-container">
+                                      <p id="caption2"></p>
+                                    </div>
+                              
+                                <div class="column">
+                                  <img class="demo2 cursor" src="./images/groom/G2001.jpg" style="width:100%" onclick="currentSlide(2,1)">
+                                </div>
+                                <div class="column">
+                                  <img class="demo2 cursor" src="./images/groom/G2002.jpg" style="width:100%" onclick="currentSlide(2,2)">
+                                </div>
+                                <div class="column">
+                                  <img class="demo2 cursor" src="./images/groom/G2003.jpg" style="width:100%" onclick="currentSlide(2,3)">
+                                </div>
+                                <div class="column">
+                                  <img class="demo2 cursor" src="./images/groom/G2004.jpg" style="width:100%" onclick="currentSlide(2,4)">
+                                </div>
+                           </div>
+                        </div>                        
+                        <td>
+                            <table border="0" class="profile">
+                                <tr>
+                                    <td colspan="2">Sai***</td>
+                                </tr>
+                                <tr>
+                                    <td>30 Yrs, 5'5"</td>
+                                    <td>B.Tech Aeronatical Engg./ MS Aviation Safety</td>
+                                </tr>
+                                <tr>
+                                    <td>USA</td>
+                                    <td>Business Analyst</td>
+                                </tr>
+                                <tr>
+                                    <td>Telugu, Mudiraju</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Never Married</td>
+                                    <td></td>
+                                </tr>                            
+                            </table>
+                        </td>
+                    </tr>
+
+                    
+                    <tr>
+                        <td><img src="./images/groom/G3001.jpg" class="profiles hidden" onclick="openModal(3);currentSlide(3,1)"></td>
+                        <div id="myModal3" class="modal">
+                          <span class="close cursor" onclick="closeModal(3)">&times;</span>
+                          <div class="modal-content">
+
+                                <div class="mySlides3">
+                                  <img src="./images/groom/G3001.jpg" style="width:100%">
+                                </div>
+                              
+                                  <a class="prev" onclick="plusSlides(3,-1)">&#10094;</a>
+                                  <a class="next" onclick="plusSlides(3,1)">&#10095;</a>
+
+                                    <div class="caption-container">
+                                      <p id="caption3"></p>
+                                    </div>
+                              
+                                <div class="column">
+                                  <img class="demo3 cursor" src="./images/groom/G3001.jpg" style="width:100%" onclick="currentSlide(3,1)">
+                                </div>
+                               
+                           </div>
+                        </div>                        
+                        <td>
+                            <table border="0" class="profile">
+                                <tr>
+                                    <td colspan="2">Sujeet***</td>
+                                </tr>
+                                <tr>
+                                    <td>33 Yrs, 5'8"</td>
+                                    <td>B.Tech CS/ MS Comp Sc.</td>
+                                </tr>
+                                <tr>
+                                    <td>USA</td>
+                                    <td>Oracle App Analyst</td>
+                                </tr>
+                                <tr>
+                                    <td>Telugu, Mudiraju</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Never Married</td>
+                                    <td></td>
+                                </tr>                            
+                            </table>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td><img src="./images/groom/G4001.jpg" class="profiles hidden" onclick="openModal(4);currentSlide(4,1)"></td>
+                        <div id="myModal4" class="modal">
+                          <span class="close cursor" onclick="closeModal(4)">&times;</span>
+                          <div class="modal-content">
+
+                                <div class="mySlides4">
+                                  <img src="./images/groom/G4001.jpg" style="width:100%">
+                                </div>
+                              
+                                  <a class="prev" onclick="plusSlides(4,-1)">&#10094;</a>
+                                  <a class="next" onclick="plusSlides(4,1)">&#10095;</a>
+
+                                    <div class="caption-container">
+                                      <p id="caption4"></p>
+                                    </div>
+                              
+                                <div class="column">
+                                  <img class="demo4 cursor" src="./images/groom/G4001.jpg" style="width:100%" onclick="currentSlide(4,1)">
+                                </div>
+                               
+                           </div>
+                        </div>                        
+                        <td>
+                            <table border="0" class="profile">
+                                <tr>
+                                    <td colspan="2">Rakesh***</td>
+                                </tr>
+                                <tr>
+                                    <td>28 Yrs</td>
+                                    <td>B.Tech CSE/ MS Univ of South Wales</td>
+                                </tr>
+                                <tr>
+                                    <td>Australia</td>
+                                    <td>Data Marketing Specialist</td>
+                                </tr>
+                                <tr>
+                                    <td>Telugu, Mudiraju</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Never Married</td>
+                                    <td></td>
+                                </tr>                            
+                            </table>
+                        </td>
+                    </tr>
+                    
+            </table>
+            </div>
+            
+        </div>
+    </body>
+</html>

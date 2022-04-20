@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.body {
+    background-color: #009688;
+}
+
+.banner {
+    width: 800px;
+    background: linear-gradient(rgba(0,0,0,0.75),#009688),url(header-shiva-parvathi-wedding.avif);
+    background-size: 100%;
+    background-position: center;
+    background-color: #009688;
+    height: 100%;
+}
+
+.navbar {
+    width:800px;
+    margin: auto;
+    padding: 35px 0px;
+    display: block;
+    align-items: stretch;
+    justify-content: space-between;
+    border: 1;
+}
+.logo {
+    width: 120px;
+    cursor: pointer;
+    
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20 px;
+    position: relative;
+    padding-left: 25px;
+}
+
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px; 
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px; 
+}
+
+.about {
+    font-family: fantasy;
+    color: beige;
+    font-weight: bolder;
+}
+
+.about p {
+    font-family: sans-serif;
+    color: azure;
+}
+
+
+.main p {
+    font-family: fantasy;
+    color: #e1cd34;
+    font-weight: bolder;
+}
+
+.intro {
+    font-size: 20;
+}
+
+.contact {
+    border-collapse: separate;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 800px;
+    color: black;
+    border: 0;
+}
+
+.contact thead tr {
+    background-color: aliceblue;
+    text-align: left;
+    font-weight: bold;
+}
+
+.contact th,
+.contact td {
+    padding: 12px 5px;
+    word-break: keep-all;
+    white-space: ="nowrap"
+}
+
+.contact tbody tr {
+}
+
+.contact tbody td {
+    border-bottom: 1px solid #fff;
+    color: wheat;
+}
+
+.profiles {
+    height: 300px;
+    width: 600px;
+}
+
+.snap {
+    width: 100%;
+    
+}
+
+.hidden {
+    overflow:hidden
+}
+
+.bgColorGrey{
+    background-color:grey
+}
+
+
+.profile {
+    border-collapse: separate;
+    margin: 2px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    color: black;
+    border: 0;
+    white-space: nowrap;
+}
+
+.profile th,
+.profile td {
+    padding: 12px 5px;
+    word-break: keep-all;
+    white-space: ="nowrap"
+}
+
+.profile tbody tr {
+}
+
+.profile tbody td {
+    border-bottom: 1px solid #fff;
+    color: wheat;
+}
