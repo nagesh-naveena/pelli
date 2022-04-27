@@ -1,1 +1,1 @@
-This is code for Static marriage website. Simple web pages as initial setup.
+This is code for Static marriage website https://www.pellibandham.com. Simple web pages as initial setup.
